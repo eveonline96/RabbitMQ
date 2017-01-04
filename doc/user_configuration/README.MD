@@ -5,7 +5,7 @@
 
 虽然可以以比较猥琐的方式：将ebin目录下rabbit.app中loopback_users里的<<"guest">>删除，或者在配置文件rabbitmq.config中对该项进行配置
 
-![](https://github.com/silence940109/RabbitMQ/blob/master/user_configuration/image/132319_nDll_184909.jpg)
+![](https://github.com/silence940109/RabbitMQ/blob/master/doc/user_configuration/image/132319_nDll_184909.jpg)
 
 并重启rabbitmq，可通过任意IP使用guest账号登陆管理控制台，但始终是违背了设计者的初衷，再加上以前对这一块了解也不多，因此有必要总结一下。
 
@@ -43,17 +43,17 @@ rabbitmqctl  list_users
 
 可登陆管理控制台(启用management plugin的情况下)，同时可以查看rabbitmq节点的相关信息(进程数，内存使用情况，磁盘使用情况等)
 
-![](https://github.com/silence940109/RabbitMQ/blob/master/user_configuration/image/124711_CcDj_184909.jpg)
+![](https://github.com/silence940109/RabbitMQ/blob/master/doc/user_configuration/image/124711_CcDj_184909.jpg)
 
 (3) 策略制定者(policymaker)
 
 可登陆管理控制台(启用management plugin的情况下), 同时可以对policy进行管理。但无法查看节点的相关信息(上图红框标识的部分)。
 
-![](https://github.com/silence940109/RabbitMQ/blob/master/user_configuration/image/125058_doRy_184909.jpg)
+![](https://github.com/silence940109/RabbitMQ/blob/master/doc/user_configuration/image/125058_doRy_184909.jpg)
 
 与administrator的对比，administrator能看到这些内容
 
-![](https://github.com/silence940109/RabbitMQ/blob/master/user_configuration/image/125325_bR7x_184909.jpg)
+![](https://github.com/silence940109/RabbitMQ/blob/master/doc/user_configuration/image/125325_bR7x_184909.jpg)
 
 (4) 普通管理者(management)
 
